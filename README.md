@@ -1,6 +1,6 @@
 # MMParallaxScrollPresenter
 
-![](https://github.com/MitchellMalleo/MMScrollPresenter/blob/master/mmParallaxPresenter.gif)
+![](https://github.com/MitchellMalleo/MMParallaxPresenter/blob/master/mmParallaxPresenter.gif)
 
 ---
 ### Example Setup
