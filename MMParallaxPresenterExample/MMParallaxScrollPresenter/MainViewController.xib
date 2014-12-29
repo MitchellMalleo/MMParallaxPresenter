@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
-                <outlet property="scrollView" destination="2gV-Hs-V8d" id="ars-dC-Spb"/>
+                <outlet property="mmParallaxPresenter" destination="2gV-Hs-V8d" id="uVb-2t-ovx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

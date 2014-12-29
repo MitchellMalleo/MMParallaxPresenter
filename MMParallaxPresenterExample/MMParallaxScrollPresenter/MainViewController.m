@@ -13,7 +13,7 @@
 
 @interface MainViewController ()
 
-@property (weak, nonatomic) IBOutlet MMParallaxPresenter *scrollView;
+@property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;
 
 @end
 
@@ -25,20 +25,20 @@
     
     PageViewController *pageThreeViewController = [[PageViewController alloc] initWithNibName:@"PageViewController" bundle:nil];
     
-    MMParallaxPage *page1 = [[MMParallaxPage alloc] initWithScrollFrame:self.scrollView.frame withHeaderHeight:150 andContentText:[self sampleText]];
+    MMParallaxPage *page1 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 andContentText:[self sampleText]];
     [page1.headerLabel setText:@"Section 1"];
     [page1.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"stars.jpeg"]]];
     
-    MMParallaxPage *page2 = [[MMParallaxPage alloc] initWithScrollFrame:self.scrollView.frame withHeaderHeight:150 withContentText:[self sampleText] andContextImage:[UIImage imageNamed:@"console.png"]];
+    MMParallaxPage *page2 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 withContentText:[self sampleText] andContextImage:[UIImage imageNamed:@"console.png"]];
     [page2.headerLabel setText:@"Section 2"];
     [page2.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mountains.jpg"]]];
 
-    MMParallaxPage *page3 = [[MMParallaxPage alloc] initWithScrollFrame:self.scrollView.frame withHeaderHeight:150 andContentView:pageThreeViewController.view];
+    MMParallaxPage *page3 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 andContentView:pageThreeViewController.view];
     [page3.headerLabel setText:@"Section 3"];
     [page3 setTitleAlignment:MMParallaxPageTitleBottomLeftAlignment];
     [page3.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dock.jpg"]]];
     
-    [self.scrollView addParallaxPageArray:@[page1, page2, page3]];
+    [self.mmParallaxPresenter addParallaxPageArray:@[page1, page2, page3]];
 }
 
 -(NSString *)sampleText
