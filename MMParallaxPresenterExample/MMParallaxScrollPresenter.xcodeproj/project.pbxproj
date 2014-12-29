@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		335844CD1A2E615B0085A0D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 335844CC1A2E615B0085A0D1 /* main.m */; };
+		335844D01A2E615B0085A0D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 335844CF1A2E615B0085A0D1 /* AppDelegate.m */; };
+		335844D81A2E615B0085A0D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335844D71A2E615B0085A0D1 /* Images.xcassets */; };
+		335844E71A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 335844E61A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.m */; };
+		335844F51A2E620D0085A0D1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335844F31A2E620D0085A0D1 /* MainViewController.m */; };
+		335844F61A2E620D0085A0D1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 335844F41A2E620D0085A0D1 /* MainViewController.xib */; };
+		335844FE1A2E65530085A0D1 /* MMParallaxPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 335844FD1A2E65530085A0D1 /* MMParallaxPresenter.m */; };
+		335845011A2E65CB0085A0D1 /* MMParallaxPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 335845001A2E65CB0085A0D1 /* MMParallaxPage.m */; };
+		335845041A2EAC3C0085A0D1 /* mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335845031A2EAC3C0085A0D1 /* mountains.jpg */; };
+		335845061A2EB1C70085A0D1 /* dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335845051A2EB1C70085A0D1 /* dock.jpg */; };
+		335845081A2EC70B0085A0D1 /* forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335845071A2EC70B0085A0D1 /* forest.jpg */; };
+		33D8ADBB1A41DA7000BA6000 /* stars.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8ADBA1A41DA7000BA6000 /* stars.jpeg */; };
+		33D8AE3E1A44B38900BA6000 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AE3C1A44B38800BA6000 /* PageViewController.m */; };
+		33D8AE3F1A44B38900BA6000 /* PageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AE3D1A44B38800BA6000 /* PageViewController.xib */; };
+		33D8AECA1A51342C00BA6000 /* MMHeaderUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33D8AEC91A51342C00BA6000 /* MMHeaderUIView.m */; };
+		33D8AECC1A51B68000BA6000 /* console.png in Resources */ = {isa = PBXBuildFile; fileRef = 33D8AECB1A51B68000BA6000 /* console.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		335844E11A2E615B0085A0D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 335844BF1A2E615B0085A0D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 335844C61A2E615B0085A0D1;
+			remoteInfo = MMParallaxScrollPresenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		335844C71A2E615B0085A0D1 /* MMParallaxScrollPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMParallaxScrollPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		335844CB1A2E615B0085A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335844CC1A2E615B0085A0D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		335844CE1A2E615B0085A0D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		335844CF1A2E615B0085A0D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		335844D71A2E615B0085A0D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		335844E01A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMParallaxScrollPresenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		335844E51A2E615B0085A0D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		335844E61A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMParallaxScrollPresenterTests.m; sourceTree = "<group>"; };
+		335844F21A2E620D0085A0D1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		335844F31A2E620D0085A0D1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		335844F41A2E620D0085A0D1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		335844FC1A2E65530085A0D1 /* MMParallaxPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMParallaxPresenter.h; sourceTree = "<group>"; };
+		335844FD1A2E65530085A0D1 /* MMParallaxPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMParallaxPresenter.m; sourceTree = "<group>"; };
+		335844FF1A2E65CB0085A0D1 /* MMParallaxPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMParallaxPage.h; sourceTree = "<group>"; };
+		335845001A2E65CB0085A0D1 /* MMParallaxPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMParallaxPage.m; sourceTree = "<group>"; };
+		335845031A2EAC3C0085A0D1 /* mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpg; sourceTree = "<group>"; };
+		335845051A2EB1C70085A0D1 /* dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dock.jpg; sourceTree = "<group>"; };
+		335845071A2EC70B0085A0D1 /* forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forest.jpg; sourceTree = "<group>"; };
+		33D8ADBA1A41DA7000BA6000 /* stars.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stars.jpeg; sourceTree = "<group>"; };
+		33D8AE3B1A44B38800BA6000 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		33D8AE3C1A44B38800BA6000 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		33D8AE3D1A44B38800BA6000 /* PageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageViewController.xib; sourceTree = "<group>"; };
+		33D8AEC81A51342C00BA6000 /* MMHeaderUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHeaderUIView.h; sourceTree = "<group>"; };
+		33D8AEC91A51342C00BA6000 /* MMHeaderUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHeaderUIView.m; sourceTree = "<group>"; };
+		33D8AECB1A51B68000BA6000 /* console.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = console.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		335844C41A2E615B0085A0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335844DD1A2E615B0085A0D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		335844BE1A2E615B0085A0D1 = {
+			isa = PBXGroup;
+			children = (
+				335844C91A2E615B0085A0D1 /* MMParallaxScrollPresenter */,
+				335844E31A2E615B0085A0D1 /* MMParallaxScrollPresenterTests */,
+				335844C81A2E615B0085A0D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		335844C81A2E615B0085A0D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				335844C71A2E615B0085A0D1 /* MMParallaxScrollPresenter.app */,
+				335844E01A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		335844C91A2E615B0085A0D1 /* MMParallaxScrollPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				335844F01A2E61DC0085A0D1 /* Views */,
+				335844F11A2E61E50085A0D1 /* Classes */,
+				335844D71A2E615B0085A0D1 /* Images.xcassets */,
+				335844CA1A2E615B0085A0D1 /* Supporting Files */,
+			);
+			path = MMParallaxScrollPresenter;
+			sourceTree = "<group>";
+		};
+		335844CA1A2E615B0085A0D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				335845021A2EAC320085A0D1 /* Images */,
+				335844CB1A2E615B0085A0D1 /* Info.plist */,
+				335844CC1A2E615B0085A0D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		335844E31A2E615B0085A0D1 /* MMParallaxScrollPresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				335844E61A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.m */,
+				335844E41A2E615B0085A0D1 /* Supporting Files */,
+			);
+			path = MMParallaxScrollPresenterTests;
+			sourceTree = "<group>";
+		};
+		335844E41A2E615B0085A0D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				335844E51A2E615B0085A0D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		335844F01A2E61DC0085A0D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				335844F21A2E620D0085A0D1 /* MainViewController.h */,
+				335844F31A2E620D0085A0D1 /* MainViewController.m */,
+				335844F41A2E620D0085A0D1 /* MainViewController.xib */,
+				33D8AE3B1A44B38800BA6000 /* PageViewController.h */,
+				33D8AE3C1A44B38800BA6000 /* PageViewController.m */,
+				33D8AE3D1A44B38800BA6000 /* PageViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		335844F11A2E61E50085A0D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				335844F71A2E62180085A0D1 /* MMParallaxPresenter */,
+				335844CE1A2E615B0085A0D1 /* AppDelegate.h */,
+				335844CF1A2E615B0085A0D1 /* AppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		335844F71A2E62180085A0D1 /* MMParallaxPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				335844FC1A2E65530085A0D1 /* MMParallaxPresenter.h */,
+				335844FD1A2E65530085A0D1 /* MMParallaxPresenter.m */,
+				335844FF1A2E65CB0085A0D1 /* MMParallaxPage.h */,
+				335845001A2E65CB0085A0D1 /* MMParallaxPage.m */,
+				33D8AEC81A51342C00BA6000 /* MMHeaderUIView.h */,
+				33D8AEC91A51342C00BA6000 /* MMHeaderUIView.m */,
+			);
+			name = MMParallaxPresenter;
+			sourceTree = "<group>";
+		};
+		335845021A2EAC320085A0D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				33D8AECB1A51B68000BA6000 /* console.png */,
+				335845071A2EC70B0085A0D1 /* forest.jpg */,
+				335845051A2EB1C70085A0D1 /* dock.jpg */,
+				335845031A2EAC3C0085A0D1 /* mountains.jpg */,
+				33D8ADBA1A41DA7000BA6000 /* stars.jpeg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		335844C61A2E615B0085A0D1 /* MMParallaxScrollPresenter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335844EA1A2E615B0085A0D1 /* Build configuration list for PBXNativeTarget "MMParallaxScrollPresenter" */;
+			buildPhases = (
+				335844C31A2E615B0085A0D1 /* Sources */,
+				335844C41A2E615B0085A0D1 /* Frameworks */,
+				335844C51A2E615B0085A0D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMParallaxScrollPresenter;
+			productName = MMParallaxScrollPresenter;
+			productReference = 335844C71A2E615B0085A0D1 /* MMParallaxScrollPresenter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		335844DF1A2E615B0085A0D1 /* MMParallaxScrollPresenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 335844ED1A2E615B0085A0D1 /* Build configuration list for PBXNativeTarget "MMParallaxScrollPresenterTests" */;
+			buildPhases = (
+				335844DC1A2E615B0085A0D1 /* Sources */,
+				335844DD1A2E615B0085A0D1 /* Frameworks */,
+				335844DE1A2E615B0085A0D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				335844E21A2E615B0085A0D1 /* PBXTargetDependency */,
+			);
+			name = MMParallaxScrollPresenterTests;
+			productName = MMParallaxScrollPresenterTests;
+			productReference = 335844E01A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		335844BF1A2E615B0085A0D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Acumen Solutions";
+				TargetAttributes = {
+					335844C61A2E615B0085A0D1 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					335844DF1A2E615B0085A0D1 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 335844C61A2E615B0085A0D1;
+					};
+				};
+			};
+			buildConfigurationList = 335844C21A2E615B0085A0D1 /* Build configuration list for PBXProject "MMParallaxScrollPresenter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 335844BE1A2E615B0085A0D1;
+			productRefGroup = 335844C81A2E615B0085A0D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				335844C61A2E615B0085A0D1 /* MMParallaxScrollPresenter */,
+				335844DF1A2E615B0085A0D1 /* MMParallaxScrollPresenterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		335844C51A2E615B0085A0D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335845061A2EB1C70085A0D1 /* dock.jpg in Resources */,
+				335844D81A2E615B0085A0D1 /* Images.xcassets in Resources */,
+				33D8AE3F1A44B38900BA6000 /* PageViewController.xib in Resources */,
+				335844F61A2E620D0085A0D1 /* MainViewController.xib in Resources */,
+				33D8ADBB1A41DA7000BA6000 /* stars.jpeg in Resources */,
+				33D8AECC1A51B68000BA6000 /* console.png in Resources */,
+				335845081A2EC70B0085A0D1 /* forest.jpg in Resources */,
+				335845041A2EAC3C0085A0D1 /* mountains.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335844DE1A2E615B0085A0D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		335844C31A2E615B0085A0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335845011A2E65CB0085A0D1 /* MMParallaxPage.m in Sources */,
+				335844D01A2E615B0085A0D1 /* AppDelegate.m in Sources */,
+				335844FE1A2E65530085A0D1 /* MMParallaxPresenter.m in Sources */,
+				335844F51A2E620D0085A0D1 /* MainViewController.m in Sources */,
+				335844CD1A2E615B0085A0D1 /* main.m in Sources */,
+				33D8AE3E1A44B38900BA6000 /* PageViewController.m in Sources */,
+				33D8AECA1A51342C00BA6000 /* MMHeaderUIView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		335844DC1A2E615B0085A0D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335844E71A2E615B0085A0D1 /* MMParallaxScrollPresenterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		335844E21A2E615B0085A0D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 335844C61A2E615B0085A0D1 /* MMParallaxScrollPresenter */;
+			targetProxy = 335844E11A2E615B0085A0D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		335844E81A2E615B0085A0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		335844E91A2E615B0085A0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		335844EB1A2E615B0085A0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MMParallaxScrollPresenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		335844EC1A2E615B0085A0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MMParallaxScrollPresenter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		335844EE1A2E615B0085A0D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MMParallaxScrollPresenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMParallaxScrollPresenter.app/MMParallaxScrollPresenter";
+			};
+			name = Debug;
+		};
+		335844EF1A2E615B0085A0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MMParallaxScrollPresenterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMParallaxScrollPresenter.app/MMParallaxScrollPresenter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		335844C21A2E615B0085A0D1 /* Build configuration list for PBXProject "MMParallaxScrollPresenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335844E81A2E615B0085A0D1 /* Debug */,
+				335844E91A2E615B0085A0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335844EA1A2E615B0085A0D1 /* Build configuration list for PBXNativeTarget "MMParallaxScrollPresenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335844EB1A2E615B0085A0D1 /* Debug */,
+				335844EC1A2E615B0085A0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		335844ED1A2E615B0085A0D1 /* Build configuration list for PBXNativeTarget "MMParallaxScrollPresenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				335844EE1A2E615B0085A0D1 /* Debug */,
+				335844EF1A2E615B0085A0D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 335844BF1A2E615B0085A0D1 /* Project object */;
+}
