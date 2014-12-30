@@ -1,4 +1,4 @@
-# MMParallaxScrollPresenter
+# MMParallaxPresenter
 
 ![](https://github.com/MitchellMalleo/MMParallaxPresenter/blob/master/mmParallaxPresenter.gif)
 
