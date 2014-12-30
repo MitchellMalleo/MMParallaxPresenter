@@ -28,13 +28,13 @@
     {
         [self setupPresenter];
         
-        self.headerScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, page.headerHeight)];
+        self.headerScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, [page headerHeight])];
         [self.headerScrollView setBackgroundColor:[UIColor blackColor]];
         [self bringSubviewToFront:self.headerScrollView];
         
-        self.innerHeaderScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, page.headerHeight)];
+        self.innerHeaderScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, [page headerHeight])];
         
-        [self.innerHeaderScrollView setContentSize:CGSizeMake(self.frame.size.width, page.headerContentHeight)];
+        [self.innerHeaderScrollView setContentSize:CGSizeMake(self.frame.size.width, [page headerContentHeight])];
     }
     else
     {
@@ -44,15 +44,15 @@
         {
             MMParallaxPage *page = [self.pageArray objectAtIndex:i];
             
-            currentContentHeight = currentContentHeight + page.contentView.frame.size.height + page.headerHeight;
+            currentContentHeight = currentContentHeight + page.contentView.frame.size.height + [page headerHeight];
         }
         
-        self.headerScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, currentContentHeight - 1, self.frame.size.width, page.headerHeight)];
-        self.innerHeaderScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, page.headerHeight + 1)];
+        self.headerScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, currentContentHeight - 1, self.frame.size.width, [page headerHeight])];
+        self.innerHeaderScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, [page headerHeight] + 1)];
         
-        [self.innerHeaderScrollView setContentSize:CGSizeMake(self.frame.size.width, page.headerContentHeight)];
+        [self.innerHeaderScrollView setContentSize:CGSizeMake(self.frame.size.width, [page headerContentHeight])];
         
-        [page.contentView setFrame:CGRectMake(0, currentContentHeight + page.headerHeight, self.frame.size.width, page.contentView.frame.size.height)];
+        [page.contentView setFrame:CGRectMake(0, currentContentHeight + [page headerHeight], self.frame.size.width, page.contentView.frame.size.height)];
     }
     
     self.headerScrollView.userInteractionEnabled = NO;
@@ -76,7 +76,7 @@
     
     self.innerHeaderScrollView.userInteractionEnabled = NO;
     
-    self.totalContentSize = self.totalContentSize + page.contentView.frame.size.height + page.headerHeight;
+    self.totalContentSize = self.totalContentSize + page.contentView.frame.size.height + [page headerHeight];
     
     [self setContentSize:CGSizeMake(0, self.totalContentSize)];
 }
@@ -134,7 +134,7 @@
                     [currentHeaderScrollView setContentOffset:CGPointMake(0, -page.contentView.frame.size.height)];
                 }
                 
-                currentContentHeight = page.contentView.frame.size.height + page.headerHeight;
+                currentContentHeight = page.contentView.frame.size.height + [page headerHeight];
             }
             else if(i < [self.headerScrollViewArray count])
             {
@@ -142,13 +142,13 @@
                 
                 if(self.contentOffset.y > currentContentHeight)
                 {
-                    currentContentHeight = currentContentHeight + page.contentView.frame.size.height + page.headerHeight;
+                    currentContentHeight = currentContentHeight + page.contentView.frame.size.height + [page headerHeight];
                     
-                    if(currentContentHeight > self.contentOffset.y && self.contentOffset.y + page.headerHeight < currentContentHeight)
+                    if(currentContentHeight > self.contentOffset.y && self.contentOffset.y + [page headerHeight] < currentContentHeight)
                     {
-                        [currentHeaderScrollView setContentOffset:CGPointMake(0, currentContentHeight - self.contentOffset.y - page.contentView.frame.size.height - page.headerHeight)];
+                        [currentHeaderScrollView setContentOffset:CGPointMake(0, currentContentHeight - self.contentOffset.y - page.contentView.frame.size.height - [page headerHeight])];
                         
-                        [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, ((currentInnerHeaderScrollView.frame.size.height / page.contentView.frame.size.height) * -currentHeaderScrollView.contentOffset.y + (page.headerContentHeight - page.headerHeight)) / 2)];
+                        [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, ((currentInnerHeaderScrollView.frame.size.height / page.contentView.frame.size.height) * -currentHeaderScrollView.contentOffset.y + ([page headerContentHeight] - [page headerHeight])) / 2)];
                     }
                     else
                     {
@@ -157,7 +157,7 @@
                 }
                 else if(currentHeaderScrollView.frame.origin.y - self.contentOffset.y < self.frame.size.height && self.contentOffset.y - currentHeaderScrollView.frame.origin.y < 0)
                 {
-                    [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, -((((currentHeaderScrollView.frame.origin.y - self.contentOffset.y) / self.frame.size.height * (page.headerContentHeight - page.headerHeight)) - (page.headerContentHeight - page.headerHeight))) / 2)];
+                    [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, -((((currentHeaderScrollView.frame.origin.y - self.contentOffset.y) / self.frame.size.height * ([page headerContentHeight] - [page headerHeight])) - ([page headerContentHeight] - [page headerHeight]))) / 2)];
                 }
             }
         }

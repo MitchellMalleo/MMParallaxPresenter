@@ -13,6 +13,9 @@
 
 @property (nonatomic) MMParallaxPageTitleAlignment titleAlignment;
 
+@property (nonatomic)  int headerHeight;
+@property (nonatomic)  int headerContentHeight;
+
 
 @end
 
@@ -127,6 +130,16 @@
     }
     
     return self;
+}
+
+-(int)headerHeight
+{
+    return _headerHeight;
+}
+
+-(int)headerContentHeight
+{
+    return _headerContentHeight;
 }
 
 -(void)setTitleAlignment:(MMParallaxPageTitleAlignment)titleAlignment

@@ -24,9 +24,8 @@ typedef enum MMParallaxPageTitleAlignment{
 -(id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentView:(UIView *)contentView;
 
 -(void)setTitleAlignment:(MMParallaxPageTitleAlignment)titleAlignment;
-
-@property int headerHeight;
-@property int headerContentHeight;
+-(int)headerHeight;
+-(int)headerContentHeight;
 
 @property (strong, nonatomic) MMHeaderUIView *headerView;
 @property (strong, nonatomic) UIView *contentView;
