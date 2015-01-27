@@ -27,7 +27,9 @@ typedef enum MMParallaxPageTitleAlignment{
 -(int)headerHeight;
 -(int)headerContentHeight;
 
+//Defaults to YES
 @property BOOL shouldAddShadowToHeaderImage;
+
 @property (strong, nonatomic) MMHeaderUIView *headerView;
 @property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) UILabel *headerLabel;
