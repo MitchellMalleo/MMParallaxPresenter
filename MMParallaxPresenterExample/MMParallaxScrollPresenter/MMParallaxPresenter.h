@@ -17,6 +17,8 @@
 
 @interface MMParallaxPresenter : UIScrollView <UIScrollViewDelegate>
 
+@property BOOL headerImagesShouldOnlyScrollAtTop;
+
 -(void)addParallaxPage:(MMParallaxPage *)page;
 -(void)addParallaxPageArray:(NSArray *)pageArray;
 

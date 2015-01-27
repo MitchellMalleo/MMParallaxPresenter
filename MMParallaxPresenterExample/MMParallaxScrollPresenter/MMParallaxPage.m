@@ -53,6 +53,7 @@
         [self.contentView addSubview:self.contentLabel];
         [self.contentView setBackgroundColor:[UIColor whiteColor]];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
+        self.shouldAddShadowToHeaderImage = YES;
     }
     
     return self;
@@ -98,6 +99,7 @@
         [self.contentView addSubview:line];
         [self.contentView setBackgroundColor:[UIColor whiteColor]];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
+        self.shouldAddShadowToHeaderImage = YES;
     }
     
     return self;
@@ -127,6 +129,7 @@
         self.contentView = contentView;
         [self.contentView setFrame:CGRectMake(0, self.headerHeight, scrollFrame.size.height, contentView.frame.size.height)];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
+        self.shouldAddShadowToHeaderImage = YES;
     }
     
     return self;

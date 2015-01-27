@@ -59,7 +59,11 @@
     self.innerHeaderScrollView.userInteractionEnabled = NO;
     self.delaysContentTouches = NO;
     
-    [self addShadowToScrollView:self.headerScrollView];
+    if(page.shouldAddShadowToHeaderImage)
+    {
+        [self addShadowToScrollView:self.headerScrollView];
+    }
+    
     self.headerScrollView.clipsToBounds = NO;
     
     [self.pageArray addObject:page];
@@ -99,6 +103,12 @@
     self.pageArray = [[NSMutableArray alloc] init];
     self.headerScrollViewArray = [[NSMutableArray alloc] init];
     self.innerHeaderScrollViewArray = [[NSMutableArray alloc] init];
+    
+    if(!self.headerImagesShouldOnlyScrollAtTop)
+    {
+        self.headerImagesShouldOnlyScrollAtTop = NO;
+    }
+    
     self.delegate = self;
 }
 
@@ -148,14 +158,21 @@
                     {
                         [currentHeaderScrollView setContentOffset:CGPointMake(0, currentContentHeight - self.contentOffset.y - page.contentView.frame.size.height - [page headerHeight])];
                         
-                        [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, ((currentInnerHeaderScrollView.frame.size.height / page.contentView.frame.size.height) * -currentHeaderScrollView.contentOffset.y + ([page headerContentHeight] - [page headerHeight])) / 2)];
+                        if(!self.headerImagesShouldOnlyScrollAtTop)
+                        {
+                            [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, ((currentInnerHeaderScrollView.frame.size.height / page.contentView.frame.size.height) * -currentHeaderScrollView.contentOffset.y + ([page headerContentHeight] - [page headerHeight])) / 2)];
+                        }
+                        else if(self.headerImagesShouldOnlyScrollAtTop)
+                        {
+                            [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, (currentInnerHeaderScrollView.frame.size.height / page.contentView.frame.size.height) * -currentHeaderScrollView.contentOffset.y)];
+                        }
                     }
                     else
                     {
                         [currentHeaderScrollView setContentOffset:CGPointMake(0, -page.contentView.frame.size.height)];
                     }
                 }
-                else if(currentHeaderScrollView.frame.origin.y - self.contentOffset.y < self.frame.size.height && self.contentOffset.y - currentHeaderScrollView.frame.origin.y < 0)
+                else if(currentHeaderScrollView.frame.origin.y - self.contentOffset.y < self.frame.size.height && self.contentOffset.y - currentHeaderScrollView.frame.origin.y < 0 && !self.headerImagesShouldOnlyScrollAtTop)
                 {
                     [currentInnerHeaderScrollView setContentOffset:CGPointMake(0, -((((currentHeaderScrollView.frame.origin.y - self.contentOffset.y) / self.frame.size.height * ([page headerContentHeight] - [page headerHeight])) - ([page headerContentHeight] - [page headerHeight]))) / 2)];
                 }
