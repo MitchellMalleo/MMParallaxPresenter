@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MMParallaxScrollPresenter/MainViewController.m"
-            timestampString = "444070505.623367"
+            timestampString = "444070870.395735"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "-sampleText"
             landmarkType = "5">
          </BreakpointContent>

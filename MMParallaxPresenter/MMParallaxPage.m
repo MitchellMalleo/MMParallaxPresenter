@@ -53,6 +53,7 @@
         [self.contentView addSubview:self.contentLabel];
         [self.contentView setBackgroundColor:[UIColor whiteColor]];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
+        self.shouldAddShadowToHeaderImage = YES;
     }
     
     return self;
@@ -83,7 +84,7 @@
         self.contentLabel.text = contentText;
         self.contentLabel.numberOfLines = 0;
         [self.contentLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16]];
-        self.contentLabel.frame = CGRectMake(80, 20, 275, kMaxContentHeight);
+        self.contentLabel.frame = CGRectMake(80, 20, scrollFrame.size.width - 100, kMaxContentHeight);
         [self.contentLabel sizeToFit];
         
         UIImageView *iconView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 40, 40)];
@@ -98,6 +99,7 @@
         [self.contentView addSubview:line];
         [self.contentView setBackgroundColor:[UIColor whiteColor]];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
+        self.shouldAddShadowToHeaderImage = YES;
     }
     
     return self;
@@ -127,6 +129,7 @@
         self.contentView = contentView;
         [self.contentView setFrame:CGRectMake(0, self.headerHeight, scrollFrame.size.height, contentView.frame.size.height)];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
+        self.shouldAddShadowToHeaderImage = YES;
     }
     
     return self;
