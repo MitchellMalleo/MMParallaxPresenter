@@ -35,6 +35,7 @@
         self.headerView.contentWidth = scrollFrame.size.width;
         
         self.headerLabel = [[UILabel alloc] init];
+        self.headerLabel.adjustsFontSizeToFitWidth = YES;
         [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:kHeaderTitleSize]];
         [self.headerLabel setFrame:CGRectMake(kContentLabelPadding, self.headerHeight / 2 - kHeaderTitleSize - kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kHeaderTitleSize + 10)];
         [self.headerLabel setText:@"Default Title"];
@@ -73,6 +74,7 @@
         self.headerView.contentWidth = scrollFrame.size.width;
         
         self.headerLabel = [[UILabel alloc] init];
+        self.headerLabel.adjustsFontSizeToFitWidth = YES;
         [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:kHeaderTitleSize]];
         [self.headerLabel setFrame:CGRectMake(kContentLabelPadding, self.headerHeight - kHeaderTitleSize - kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kHeaderTitleSize + 10)];
         [self.headerLabel setText:@"Default Title"];
@@ -119,6 +121,7 @@
         self.headerView.contentWidth = scrollFrame.size.width;
         
         self.headerLabel = [[UILabel alloc] init];
+        self.headerLabel.adjustsFontSizeToFitWidth = YES;
         [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:kHeaderTitleSize]];
         [self.headerLabel setFrame:CGRectMake(kHeaderTitlePadding, self.headerHeight - kHeaderTitleSize - kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kHeaderTitleSize + 10)];
         [self.headerLabel setText:@"Default Title"];
