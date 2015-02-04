@@ -86,7 +86,7 @@
         self.contentLabel.text = contentText;
         self.contentLabel.numberOfLines = 0;
         [self.contentLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16]];
-        self.contentLabel.frame = CGRectMake(80, 20, scrollFrame.size.width - 100, kMaxContentHeight);
+        self.contentLabel.frame = CGRectMake(80, 20, scrollFrame.size.width - 90 - kContentLabelPadding, kMaxContentHeight);
         [self.contentLabel sizeToFit];
         
         UIImageView *iconView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 40, 40)];
