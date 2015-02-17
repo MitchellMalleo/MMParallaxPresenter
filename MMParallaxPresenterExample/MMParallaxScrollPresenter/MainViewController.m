@@ -31,7 +31,7 @@
     [page1.headerLabel setText:@"Section 1"];
     [page1.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"stars.jpeg"]]];
     
-    MMParallaxPage *page2 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 withContentText:[self sampleText] andContextImage:[UIImage imageNamed:@"console.png"]];
+    MMParallaxPage *page2 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 withContentText:[self sampleText] andContextImage:[UIImage imageNamed:@"icon.png"]];
     [page2.headerLabel setText:@"Section 2"];
     [page2.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mountains.jpg"]]];
 
