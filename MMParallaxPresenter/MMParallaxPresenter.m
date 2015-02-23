@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UIScrollView *headerScrollView;
 @property (nonatomic, strong) UIScrollView *innerHeaderScrollView;
 @property int totalContentSize;
+@property BOOL wasReset;
 
 @end
 
@@ -24,8 +25,14 @@
 
 -(void)addParallaxPage:(MMParallaxPage *)page
 {
-    if(!self.pageArray)
+    if(!self.pageArray || self.wasReset)
     {
+        if(self.wasReset)
+        {
+            self.totalContentSize = 0;
+            self.wasReset = NO;
+        }
+        
         [self setupPresenter];
         
         self.headerScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, [page headerHeight])];
@@ -110,6 +117,14 @@
     }
     
     self.delegate = self;
+}
+
+-(void)resetPresenter
+{
+    [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+    [self setContentSize:CGSizeMake(0, 0)];
+    self.wasReset = YES;
 }
 
 #pragma mark - UIScrollViewDelegate & ScrollViewUtilityMethods

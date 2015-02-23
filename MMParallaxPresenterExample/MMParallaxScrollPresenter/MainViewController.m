@@ -14,6 +14,7 @@
 @interface MainViewController ()
 
 @property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;
+@property (weak, nonatomic) IBOutlet UIButton *resetPresenter;
 
 @end
 
@@ -41,6 +42,21 @@
     [page3.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dock.jpg"]]];
     
     [self.mmParallaxPresenter addParallaxPageArray:@[page1, page2, page3]];
+}
+
+-(IBAction)resetPresenter:(id)sender
+{
+    [self.mmParallaxPresenter resetPresenter];
+    
+    MMParallaxPage *page1 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 andContentText:[self sampleText]];
+    [page1.headerLabel setText:@"Section 4"];
+    [page1.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"forest.jpg"]]];
+    
+    MMParallaxPage *page2 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 withContentText:[self sampleText] andContextImage:[UIImage imageNamed:@"icon.png"]];
+    [page2.headerLabel setText:@"Section 35"];
+    [page2.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mountains.jpg"]]];
+    
+    [self.mmParallaxPresenter addParallaxPageArray:@[page1, page2]];
 }
 
 -(NSString *)sampleText
