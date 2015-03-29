@@ -119,7 +119,7 @@
     self.delegate = self;
 }
 
--(void)resetPresenter
+-(void)reset
 {
     [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];

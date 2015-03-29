@@ -46,7 +46,7 @@
 
 -(IBAction)resetPresenter:(id)sender
 {
-    [self.mmParallaxPresenter resetPresenter];
+    [self.mmParallaxPresenter reset];
     
     MMParallaxPage *page1 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 andContentText:[self sampleText]];
     [page1.headerLabel setText:@"Section 4"];

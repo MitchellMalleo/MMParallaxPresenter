@@ -20,7 +20,7 @@
 //Defaults to NO
 @property BOOL headerImagesShouldOnlyScrollAtTop;
 
--(void)resetPresenter;
+-(void)reset;
 -(void)addParallaxPage:(MMParallaxPage *)page;
 -(void)addParallaxPageArray:(NSArray *)pageArray;
 
