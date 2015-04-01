@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "MMParallaxPage.h"
 
-#define kMaxContentHeight 10000
-#define kContentLabelPadding 10
+static int const MMParallaxPresenterMaxContentHeight = 10000;
+static int const MMParallaxPresenterContentLabelPadding = 10;
 
-#define kHeaderTitleSize 35
-#define kHeaderTitlePadding 10
+static int const MMParallaxPresenterHeaderTitleSize = 35;
+static int const MMParallaxPresenterHeaderTitlePadding = 10;
 
 @interface MMParallaxPresenter : UIScrollView <UIScrollViewDelegate>
 

@@ -40,8 +40,8 @@
         
         self.headerLabel = [[UILabel alloc] init];
         self.headerLabel.adjustsFontSizeToFitWidth = YES;
-        [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:kHeaderTitleSize]];
-        [self.headerLabel setFrame:CGRectMake(kContentLabelPadding, self.headerHeight / 2 - kHeaderTitleSize - kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kHeaderTitleSize + 10)];
+        [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:MMParallaxPresenterHeaderTitleSize]];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterContentLabelPadding, self.headerHeight / 2 - MMParallaxPresenterHeaderTitleSize - MMParallaxPresenterHeaderTitlePadding, scrollFrame.size.width - (MMParallaxPresenterHeaderTitlePadding * 2), MMParallaxPresenterHeaderTitleSize + 10)];
         [self.headerLabel setText:@"Default Title"];
         [self.headerLabel setTextColor:[UIColor whiteColor]];
         [self.headerLabel setTextAlignment:NSTextAlignmentRight];
@@ -51,10 +51,10 @@
         self.contentLabel.text = contentText;
         self.contentLabel.numberOfLines = 0;
         [self.contentLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16]];
-        self.contentLabel.frame = CGRectMake(kHeaderTitlePadding, kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kMaxContentHeight);
+        self.contentLabel.frame = CGRectMake(MMParallaxPresenterHeaderTitlePadding, MMParallaxPresenterHeaderTitlePadding, scrollFrame.size.width - (MMParallaxPresenterHeaderTitlePadding * 2), MMParallaxPresenterMaxContentHeight);
         [self.contentLabel sizeToFit];
         
-        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, self.headerHeight, scrollFrame.size.width, self.contentLabel.frame.size.height + (kContentLabelPadding * 2))];
+        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, self.headerHeight, scrollFrame.size.width, self.contentLabel.frame.size.height + (MMParallaxPresenterContentLabelPadding * 2))];
         [self.contentView addSubview:self.contentLabel];
         [self.contentView setBackgroundColor:[UIColor whiteColor]];
         [self setTitleAlignment:MMParallaxPageTitleBottomRightAlignment];
@@ -79,8 +79,8 @@
         
         self.headerLabel = [[UILabel alloc] init];
         self.headerLabel.adjustsFontSizeToFitWidth = YES;
-        [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:kHeaderTitleSize]];
-        [self.headerLabel setFrame:CGRectMake(kContentLabelPadding, self.headerHeight - kHeaderTitleSize - kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kHeaderTitleSize + 10)];
+        [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:MMParallaxPresenterHeaderTitleSize]];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterContentLabelPadding, self.headerHeight - MMParallaxPresenterHeaderTitleSize - MMParallaxPresenterHeaderTitlePadding, scrollFrame.size.width - (MMParallaxPresenterHeaderTitlePadding * 2), MMParallaxPresenterHeaderTitleSize + 10)];
         [self.headerLabel setText:@"Default Title"];
         [self.headerLabel setTextColor:[UIColor whiteColor]];
         [self.headerLabel setTextAlignment:NSTextAlignmentRight];
@@ -90,7 +90,7 @@
         self.contentLabel.text = contentText;
         self.contentLabel.numberOfLines = 0;
         [self.contentLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:16]];
-        self.contentLabel.frame = CGRectMake(80, 20, scrollFrame.size.width - 90 - kContentLabelPadding, kMaxContentHeight);
+        self.contentLabel.frame = CGRectMake(80, 20, scrollFrame.size.width - 90 - MMParallaxPresenterContentLabelPadding, MMParallaxPresenterMaxContentHeight);
         [self.contentLabel sizeToFit];
         
         UIImageView *iconView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 40, 40)];
@@ -126,8 +126,8 @@
         
         self.headerLabel = [[UILabel alloc] init];
         self.headerLabel.adjustsFontSizeToFitWidth = YES;
-        [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:kHeaderTitleSize]];
-        [self.headerLabel setFrame:CGRectMake(kHeaderTitlePadding, self.headerHeight - kHeaderTitleSize - kHeaderTitlePadding, scrollFrame.size.width - (kHeaderTitlePadding * 2), kHeaderTitleSize + 10)];
+        [self.headerLabel setFont:[UIFont fontWithName:@"HelveticaNeue-Thin" size:MMParallaxPresenterHeaderTitleSize]];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterHeaderTitlePadding, self.headerHeight - MMParallaxPresenterHeaderTitleSize - MMParallaxPresenterHeaderTitlePadding, scrollFrame.size.width - (MMParallaxPresenterHeaderTitlePadding * 2), MMParallaxPresenterHeaderTitleSize + 10)];
         [self.headerLabel setText:@"Default Title"];
         [self.headerLabel setTextColor:[UIColor whiteColor]];
         [self.headerLabel setTextAlignment:NSTextAlignmentRight];
@@ -164,22 +164,22 @@
 {
     if(self.titleAlignment == MMParallaxPageTitleBottomLeftAlignment)
     {
-        [self.headerLabel setFrame:CGRectMake(kHeaderTitlePadding, self.headerHeight - kHeaderTitleSize - kHeaderTitlePadding, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterHeaderTitlePadding, self.headerHeight - MMParallaxPresenterHeaderTitleSize - MMParallaxPresenterHeaderTitlePadding, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
         [self.headerLabel setTextAlignment:NSTextAlignmentLeft];
     }
     else if(self.titleAlignment == MMParallaxPageTitleBottomRightAlignment)
     {
-        [self.headerLabel setFrame:CGRectMake(kHeaderTitlePadding, self.headerHeight - kHeaderTitleSize - kHeaderTitlePadding, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterHeaderTitlePadding, self.headerHeight - MMParallaxPresenterHeaderTitleSize - MMParallaxPresenterHeaderTitlePadding, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
         [self.headerLabel setTextAlignment:NSTextAlignmentRight];
     }
     else if(self.titleAlignment == MMParallaxPageTitleTopLeftAlignment)
     {
-        [self.headerLabel setFrame:CGRectMake(kHeaderTitlePadding, 0, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterHeaderTitlePadding, 0, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
         [self.headerLabel setTextAlignment:NSTextAlignmentLeft];
     }
     else if(self.titleAlignment == MMParallaxPageTitleTopRightAlignment)
     {
-        [self.headerLabel setFrame:CGRectMake(kHeaderTitlePadding, 0, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
+        [self.headerLabel setFrame:CGRectMake(MMParallaxPresenterHeaderTitlePadding, 0, self.headerLabel.frame.size.width, self.headerLabel.frame.size.height)];
         [self.headerLabel setTextAlignment:NSTextAlignmentRight];
     }
 }
