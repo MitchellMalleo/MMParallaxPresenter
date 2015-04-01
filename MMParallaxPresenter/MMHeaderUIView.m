@@ -9,7 +9,9 @@
 
 @implementation MMHeaderUIView
 
--(void)addSubview:(UIView *)view
+#pragma mark - Public methods
+
+- (void)addSubview:(UIView *)view
 {
     if([view isKindOfClass:[UIImageView class]])
     {
@@ -18,7 +20,7 @@
     }
 }
 
--(void)addTitle:(UIView *)view
+- (void)addTitle:(UIView *)view
 {
     [super addSubview:view];
 }

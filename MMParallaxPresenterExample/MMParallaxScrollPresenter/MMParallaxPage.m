@@ -13,15 +13,19 @@
 
 @property (nonatomic) MMParallaxPageTitleAlignment titleAlignment;
 
-@property (nonatomic)  int headerHeight;
-@property (nonatomic)  int headerContentHeight;
+@property (nonatomic) int headerHeight;
+@property (nonatomic) int headerContentHeight;
 
 
 @end
 
+#pragma mark - MMParallaxPage
+
 @implementation MMParallaxPage
 
--(id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentText:(NSString *)contentText
+#pragma mark - Public methods
+
+- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentText:(NSString *)contentText
 {
     self = [super init];
     
@@ -60,7 +64,7 @@
     return self;
 }
 
--(id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height withContentText:(NSString *)contentText andContextImage:(UIImage *)image
+- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height withContentText:(NSString *)contentText andContextImage:(UIImage *)image
 {
     self = [super init];
     
@@ -107,7 +111,7 @@
     return self;
 }
 
--(id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentView:(UIView *)contentView
+- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentView:(UIView *)contentView
 {
     self = [super init];
     
@@ -138,23 +142,25 @@
     return self;
 }
 
--(int)headerHeight
+- (int)headerHeight
 {
     return _headerHeight;
 }
 
--(int)headerContentHeight
+- (int)headerContentHeight
 {
     return _headerContentHeight;
 }
 
--(void)setTitleAlignment:(MMParallaxPageTitleAlignment)titleAlignment
+- (void)setTitleAlignment:(MMParallaxPageTitleAlignment)titleAlignment
 {
     _titleAlignment = titleAlignment;
     [self setupTitleFrame];
 }
 
--(void)setupTitleFrame
+#pragma mark - Private methods
+
+- (void)setupTitleFrame
 {
     if(self.titleAlignment == MMParallaxPageTitleBottomLeftAlignment)
     {

@@ -21,7 +21,11 @@
 
 @end
 
+#pragma mark - MMParallaxPresenter
+
 @implementation MMParallaxPresenter
+
+#pragma mark - Public methods
 
 -(void)addParallaxPage:(MMParallaxPage *)page
 {
@@ -105,7 +109,17 @@
     }
 }
 
--(void)setupPresenter
+- (void)reset
+{
+    [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    [self scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+    [self setContentSize:CGSizeMake(0, 0)];
+    self.wasReset = YES;
+}
+
+#pragma mark - Private methods
+
+- (void)setupPresenter
 {
     self.pageArray = [[NSMutableArray alloc] init];
     self.headerScrollViewArray = [[NSMutableArray alloc] init];
@@ -119,17 +133,9 @@
     self.delegate = self;
 }
 
--(void)reset
-{
-    [[self subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    [self scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
-    [self setContentSize:CGSizeMake(0, 0)];
-    self.wasReset = YES;
-}
-
 #pragma mark - UIScrollViewDelegate & ScrollViewUtilityMethods
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     if(scrollView == self)
     {
@@ -196,7 +202,7 @@
     }
 }
 
--(void)addShadowToScrollView:(UIScrollView *)scrollView
+- (void)addShadowToScrollView:(UIScrollView *)scrollView
 {
     scrollView.layer.shadowOpacity = 1.0;
     scrollView.layer.shadowOffset = CGSizeMake(0, 0);

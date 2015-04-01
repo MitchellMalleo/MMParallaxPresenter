@@ -13,8 +13,8 @@
 
 @interface MainViewController ()
 
-@property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;
-@property (weak, nonatomic) IBOutlet UIButton *resetPresenter;
+@property (nonatomic, weak) IBOutlet MMParallaxPresenter *mmParallaxPresenter;
+@property (nonatomic, weak) IBOutlet UIButton *resetPresenter;
 
 @end
 
@@ -44,7 +44,7 @@
     [self.mmParallaxPresenter addParallaxPageArray:@[page1, page2, page3]];
 }
 
--(IBAction)resetPresenter:(id)sender
+- (IBAction)resetPresenter:(id)sender
 {
     [self.mmParallaxPresenter reset];
     
@@ -59,7 +59,7 @@
     [self.mmParallaxPresenter addParallaxPageArray:@[page1, page2]];
 }
 
--(NSString *)sampleText
+- (NSString *)sampleText
 {
     return @"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n \n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proideLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n \n Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 }

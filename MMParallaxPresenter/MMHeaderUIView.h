@@ -9,7 +9,7 @@
 
 @interface MMHeaderUIView : UIView
 
--(void)addTitle:(UIView *)view;
+- (void)addTitle:(UIView *)view;
 
 @property int contentHeight;
 @property int contentWidth;
