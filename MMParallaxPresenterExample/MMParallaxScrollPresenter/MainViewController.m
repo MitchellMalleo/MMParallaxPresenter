@@ -13,8 +13,8 @@
 
 @interface MainViewController ()
 
-@property (nonatomic, weak) IBOutlet MMParallaxPresenter *mmParallaxPresenter;
-@property (nonatomic, weak) IBOutlet UIButton *resetPresenter;
+@property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;
+@property (weak, nonatomic) IBOutlet UIButton *resetPresenter;
 
 @end
 

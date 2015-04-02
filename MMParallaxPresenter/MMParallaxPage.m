@@ -142,6 +142,8 @@
     return self;
 }
 
+#pragma mark - Custom Accessors
+
 - (int)headerHeight
 {
     return _headerHeight;

@@ -10,12 +10,12 @@
 
 @interface MMParallaxPresenter()
 
-@property (nonatomic, strong) NSMutableArray *pageArray;
-@property (nonatomic, strong) NSMutableArray *headerScrollViewArray;
-@property (nonatomic, strong) NSMutableArray *innerHeaderScrollViewArray;
+@property (strong, nonatomic) NSMutableArray *pageArray;
+@property (strong, nonatomic) NSMutableArray *headerScrollViewArray;
+@property (strong, nonatomic) NSMutableArray *innerHeaderScrollViewArray;
 
-@property (nonatomic, strong) UIScrollView *headerScrollView;
-@property (nonatomic, strong) UIScrollView *innerHeaderScrollView;
+@property (strong, nonatomic) UIScrollView *headerScrollView;
+@property (strong, nonatomic) UIScrollView *innerHeaderScrollView;
 @property int totalContentSize;
 @property BOOL wasReset;
 
