@@ -23,7 +23,7 @@
 
 @implementation MMParallaxPage
 
-#pragma mark - Public methods
+#pragma mark - Lifecycle
 
 - (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentText:(NSString *)contentText
 {
