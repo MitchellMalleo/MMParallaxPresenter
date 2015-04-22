@@ -17,7 +17,6 @@
 		335845041A2EAC3C0085A0D1 /* mountains.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335845031A2EAC3C0085A0D1 /* mountains.jpg */; };
 		335845061A2EB1C70085A0D1 /* dock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335845051A2EB1C70085A0D1 /* dock.jpg */; };
 		335845081A2EC70B0085A0D1 /* forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 335845071A2EC70B0085A0D1 /* forest.jpg */; };
-		3399FB041AE72E92009EC58A /* MMHeaderUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399FAFF1AE72E92009EC58A /* MMHeaderUIView.m */; };
 		3399FB051AE72E92009EC58A /* MMParallaxPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399FB011AE72E92009EC58A /* MMParallaxPage.m */; };
 		3399FB061AE72E92009EC58A /* MMParallaxPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3399FB031AE72E92009EC58A /* MMParallaxPresenter.m */; };
 		33D8ADBB1A41DA7000BA6000 /* stars.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 33D8ADBA1A41DA7000BA6000 /* stars.jpeg */; };
@@ -52,8 +51,6 @@
 		335845031A2EAC3C0085A0D1 /* mountains.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mountains.jpg; sourceTree = "<group>"; };
 		335845051A2EB1C70085A0D1 /* dock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dock.jpg; sourceTree = "<group>"; };
 		335845071A2EC70B0085A0D1 /* forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = forest.jpg; sourceTree = "<group>"; };
-		3399FAFE1AE72E92009EC58A /* MMHeaderUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMHeaderUIView.h; path = ../../Classes/MMHeaderUIView.h; sourceTree = "<group>"; };
-		3399FAFF1AE72E92009EC58A /* MMHeaderUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMHeaderUIView.m; path = ../../Classes/MMHeaderUIView.m; sourceTree = "<group>"; };
 		3399FB001AE72E92009EC58A /* MMParallaxPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMParallaxPage.h; path = ../../Classes/MMParallaxPage.h; sourceTree = "<group>"; };
 		3399FB011AE72E92009EC58A /* MMParallaxPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMParallaxPage.m; path = ../../Classes/MMParallaxPage.m; sourceTree = "<group>"; };
 		3399FB021AE72E92009EC58A /* MMParallaxPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMParallaxPresenter.h; path = ../../Classes/MMParallaxPresenter.h; sourceTree = "<group>"; };
@@ -176,8 +173,6 @@
 		3399FAEB1AE72C7A009EC58A /* MMParallaxPresenter */ = {
 			isa = PBXGroup;
 			children = (
-				3399FAFE1AE72E92009EC58A /* MMHeaderUIView.h */,
-				3399FAFF1AE72E92009EC58A /* MMHeaderUIView.m */,
 				3399FB001AE72E92009EC58A /* MMParallaxPage.h */,
 				3399FB011AE72E92009EC58A /* MMParallaxPage.m */,
 				3399FB021AE72E92009EC58A /* MMParallaxPresenter.h */,
@@ -297,7 +292,6 @@
 				3399FB061AE72E92009EC58A /* MMParallaxPresenter.m in Sources */,
 				335844CD1A2E615B0085A0D1 /* main.m in Sources */,
 				33D8AE3E1A44B38900BA6000 /* PageViewController.m in Sources */,
-				3399FB041AE72E92009EC58A /* MMHeaderUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

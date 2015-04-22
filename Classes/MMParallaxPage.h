@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MMHeaderUIView.h"
 #import <UIKit/UIKit.h>
 
 typedef enum MMParallaxPageTitleAlignment{
@@ -16,6 +15,15 @@ typedef enum MMParallaxPageTitleAlignment{
     MMParallaxPageTitleTopLeftAlignment,
     MMParallaxPageTitleTopRightAlignment
 } MMParallaxPageTitleAlignment;
+
+@interface MMHeaderUIView : UIView
+
+- (void)addTitle:(UIView *)view;
+
+@property int contentHeight;
+@property int contentWidth;
+
+@end
 
 @interface MMParallaxPage : NSObject
 

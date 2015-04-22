@@ -9,6 +9,28 @@
 #import "MMParallaxPage.h"
 #import "MMParallaxPresenter.h"
 
+#pragma mark - MMHeaderUIView
+
+@implementation MMHeaderUIView
+
+#pragma mark - Public methods
+
+- (void)addSubview:(UIView *)view
+{
+    if([view isKindOfClass:[UIImageView class]])
+    {
+        [view setFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, self.contentWidth, self.contentHeight)];
+        [super addSubview:view];
+    }
+}
+
+- (void)addTitle:(UIView *)view
+{
+    [super addSubview:view];
+}
+
+@end
+
 @interface MMParallaxPage()
 
 @property (nonatomic) MMParallaxPageTitleAlignment titleAlignment;
