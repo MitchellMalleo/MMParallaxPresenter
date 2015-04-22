@@ -5,7 +5,7 @@
 ---
 ### Example Setup
 
-1. Clone the repo and drag the MMParallaxPresenter folder into your project. This should include MMHeaderUIView.h/.m, MMParallaxPage.h/.m, and MMParallaxPresenter.h/.m
+1. Clone the repo and drag the Classes folder into your project. This should include MMHeaderUIView.h/.m, MMParallaxPage.h/.m, and MMParallaxPresenter.h/.m
 2. Drag and drop a UIScrollView into your Interface Builder and under the custom class section, subclass your UIScrollView to MMParallaxPresenter
 3. Now add: `@property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;` to your list of properties and dont forget to link it up in your Interface Builder
 4. Add a MMParallaxPage to the MMScrollPresenter. To do this, you have three init methods at your disposal. All the default views are shown in the above gif in this order:
