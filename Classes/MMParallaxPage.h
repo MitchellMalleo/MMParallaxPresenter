@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef enum MMParallaxPageTitleAlignment{
+typedef NS_ENUM(NSInteger, MMParallaxPageTitleAlignment){
     MMParallaxPageTitleBottomLeftAlignment,
     MMParallaxPageTitleBottomRightAlignment,
     MMParallaxPageTitleTopLeftAlignment,
     MMParallaxPageTitleTopRightAlignment
-} MMParallaxPageTitleAlignment;
+};
 
 @interface MMHeaderUIView : UIView
 
@@ -27,9 +27,9 @@ typedef enum MMParallaxPageTitleAlignment{
 
 @interface MMParallaxPage : NSObject
 
-- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentText:(NSString *)contentText;
-- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height withContentText:(NSString *)contentText andContextImage:(UIImage *)image;
-- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentView:(UIView *)contentView;
+- (instancetype)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentText:(NSString *)contentText;
+- (instancetype)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height withContentText:(NSString *)contentText andContextImage:(UIImage *)image;
+- (instancetype)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentView:(UIView *)contentView;
 
 - (void)setTitleAlignment:(MMParallaxPageTitleAlignment)titleAlignment;
 - (int)headerHeight;

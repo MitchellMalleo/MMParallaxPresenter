@@ -10,17 +10,25 @@
 3. Now add: `@property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;` to your list of properties and dont forget to link it up in your Interface Builder
 4. Add a MMParallaxPage to the MMScrollPresenter. To do this, you have three init methods at your disposal. All the default views are shown in the above gif in this order:
 
-		- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentText:(NSString *)contentText;
+		- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height 
+			andContentText:(NSString *)contentText;
 		
-		- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height withContentText:(NSString *)contentText andContextImage:(UIImage *)image;
+		- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height 
+			withContentText:(NSString *)contentText andContextImage:(UIImage *)image;
 		
-		- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height andContentView:(UIView *)contentView;
+		- (id)initWithScrollFrame:(CGRect)scrollFrame withHeaderHeight:(int)height 
+			andContentView:(UIView *)contentView;
 		
 * Here is the snippet of code slightly modified from the example app included in the repo. This shows how to initalize and setup a page and add it to your presenter:
     
-    	MMParallaxPage *page1 = [[MMParallaxPage alloc] initWithScrollFrame:self.mmParallaxPresenter.frame withHeaderHeight:150 andContentText:[self sampleText]];
+    	MMParallaxPage *page1 = [[MMParallaxPage alloc] 
+    		initWithScrollFrame:self.mmParallaxPresenter.frame 
+    		withHeaderHeight:150 andContentText:[self sampleText]];
+    		
     	[page1.headerLabel setText:@"Section 1"];
-    	[page1.headerView addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"stars.jpeg"]]];
+    	
+    	[page1.headerView addSubview:[[UIImageView alloc] 
+    		initWithImage:[UIImage imageNamed:@"stars.jpeg"]]];
     	
     	[self.scrollView addParallaxPageArray:@[page1]];
 
