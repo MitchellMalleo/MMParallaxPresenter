@@ -206,7 +206,7 @@
 {
     scrollView.layer.shadowOpacity = 1.0;
     scrollView.layer.shadowOffset = CGSizeMake(0, 0);
-    scrollView.layer.shadowRadius = 8;
+    scrollView.layer.shadowRadius = 2;
     scrollView.layer.shadowColor = [UIColor blackColor].CGColor;
 }
 
