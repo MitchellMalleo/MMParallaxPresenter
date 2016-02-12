@@ -13,7 +13,7 @@ MMParallaxPresenter is a UIScrollView that displays text / views with a vertical
 
 ## Installation
 
-1. MMParallaxPresenter can be installed via [Cocoapods](http://cocoapods.org/) by adding `pod 'MMParallaxPresenter'` to your podfile, or you can manually add `MMParallaxPage.h/.m` and `MMParallaxPresenter.h/.m` into your project.
+1. MMParallaxPresenter can be installed via [CocoaPods](http://cocoapods.org/) by adding `pod 'MMParallaxPresenter'` to your podfile, or you can manually add `MMParallaxPage.h/.m` and `MMParallaxPresenter.h/.m` into your project.
 2. Drag and drop a UIScrollView into your Interface Builder and under the custom class section, subclass your UIScrollView to MMParallaxPresenter
 3. Now add: `@property (weak, nonatomic) IBOutlet MMParallaxPresenter *mmParallaxPresenter;` to your list of properties and dont forget to link it up in your Interface Builder
 
